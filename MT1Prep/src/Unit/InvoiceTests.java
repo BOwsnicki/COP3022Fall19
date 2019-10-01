@@ -13,7 +13,6 @@ class InvoiceTests {
 		assertEquals(0, inv.getNumberOfPositions());
 		assertEquals(0, inv.getTotal());
 		
-		
 		inv.addPosition(new Position("Towels", 1350));
 		assertEquals(1, inv.getNumberOfPositions());
 		assertEquals(1350, inv.getTotal());

@@ -16,6 +16,7 @@ public class Rectangle
 
    public static void main(String args[]) {
 	  Rectangle obj = new Rectangle(4,6);
-      System.out.println(obj.computeVolume(2,3)); 
+	  // System.out.println(obj.circumference());
+      System.out.println(obj.circumference(2,3)); 
    } 
 }

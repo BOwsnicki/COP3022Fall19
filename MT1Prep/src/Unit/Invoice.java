@@ -1,12 +1,12 @@
 package Unit;
 
 public class Invoice {
-	
+	private static final int MAX_POSITION = 10;
 	public Position[] positions;
 	private int totalPositions;
 		
 	public Invoice() {
-		positions = new Position[5];
+		positions = new Position[MAX_POSITION];
 		totalPositions = 0;
 	}
 	
@@ -23,7 +23,7 @@ public class Invoice {
 	
 	public int getTotal() {
 		int total = 0;
-		for(int i = 0; i <= (totalPositions - 1); i++) {
+		for(int i = 0; i < totalPositions; i++) {
 			total += positions[i].getAmount();
 		}		
 		return total;

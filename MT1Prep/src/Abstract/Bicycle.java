@@ -11,6 +11,7 @@ public class Bicycle extends Vehicle {
 		return 30;
 	}
 	
+	
 	@Override
 	public String toString() {
 		return super.toString() + " [Bicycle " + maxSpeed() + "mph]";
