@@ -1,0 +1,2 @@
+As described earlier, a stream can be defined as a sequence of data. The InputStream is used to read data from a source and the OutputStream is used for writing data to a destination.
+Here is a hierarchy of classes to deal with Input and Output streams.
