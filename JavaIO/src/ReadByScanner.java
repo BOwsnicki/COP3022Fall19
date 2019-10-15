@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class ReadByScanner {
 	private static final String fileName = "src/in.txt";
 	public static void main(String[] args) {
+		Scanner fInput = null;
 		try {
-			Scanner fInput =
-					  new Scanner(new FileInputStream(fileName));
+			fInput = new Scanner(new FileInputStream(fileName));
 			while (fInput.hasNextLine()) {
 				String s = fInput.nextLine();
 				System.out.println(s);
@@ -15,6 +15,8 @@ public class ReadByScanner {
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			fInput.close();
 		}
 		
 	}

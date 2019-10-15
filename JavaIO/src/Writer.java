@@ -10,7 +10,7 @@ public class Writer {
 		try {
 			pw = new PrintWriter(new FileOutputStream(fileName));
 			for (int i = 0; i < 100; i++) {
-				pw.println("Line " + i);
+				pw.println("Line or Row " + i);
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
