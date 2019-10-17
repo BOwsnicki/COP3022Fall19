@@ -5,13 +5,16 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class ReadWriteRaw {
-	private static final String inpName = "src/ocd.jpg";
-	private static final String outpName = "src/ocdCopy.jpg";
-
+	private static final String inpName = "H:/ocd1.jpg";
+	private static final String outpName = "H:/ocdCopy.jpg";
+	
 	public static void main(String[] args) {
-		// Better "Try with Resources" Java 7+
-		try (FileInputStream fis = new FileInputStream(inpName);
-				FileOutputStream fos = new FileOutputStream(outpName)) {
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		
+		try {
+			fos = new FileOutputStream(outpName);
+			fis = new FileInputStream(inpName);
 			int inp;
 			while ((inp = fis.read()) != -1) {
 				fos.write(inp);
@@ -19,6 +22,12 @@ public class ReadWriteRaw {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			try {
+				fis.close();
+				fos.close();
+			} catch (Exception e) { }
 		}
+
 	}
 }
