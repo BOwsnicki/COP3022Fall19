@@ -1,5 +1,7 @@
 package v4;
 
+import java.util.Arrays;
+
 public class SortDemo {
 
 	public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class SortDemo {
 			stuff[2] = new Employee(2000);
 			stuff[3] = new TV(1500);
 			stuff[4] = new Employee(1400);
-			Sorter.selectionSort(stuff);
+			Arrays.sort(stuff); // uses Comparable!
 			for (int i = 0; i < stuff.length; i++) {
 				System.out.println(stuff[i]);
 			}
