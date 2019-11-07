@@ -6,12 +6,7 @@ public class Stack<T> {
 	private ArrayList<T> elements;
 
 	public Stack() {
-		this(10); // default stack size
-	} // end no-argument Stack constructor
-
-	public Stack(int capacity) {
-		int initCapacity = capacity > 0 ? capacity : 10;
-		elements = new ArrayList<T>(initCapacity);
+		elements = new ArrayList<T>();
 	}
 
 	public void push(T pushValue) {
