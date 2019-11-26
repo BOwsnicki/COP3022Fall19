@@ -1,3 +1,20 @@
+/*
+ Syllables per line in Tool: "Lateralus"
+
+ 1 Black
+ 1 then
+ 2 white are 
+ 3 all I see 
+ 5 in my infancy
+ 8 Red and yellow then came to be, 
+ 5 reaching out to me
+ 3 Lets me see
+
+13 As below, so above and beyond, I imagine
+ 8 Drawn beyond the lines of reason
+ 5 Push the envelope, 
+ 3 watch it bend
+ */
 
 public class Fibonacci {
 	public static int fib(int n) {
